@@ -2,9 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
 
-
-print("FREDからデータをダウンロード中...")
-
 url = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=T10Y2Y"
 
 
@@ -47,4 +44,5 @@ plt.legend(loc='upper left')
 
 
 plt.tight_layout()
+
 plt.savefig('yield_curve_analysis.png')
